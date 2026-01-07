@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EXPO | Let's Talk Operations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="page-contact">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html" class="nav-logo">EXPO</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
+            <h1 class="page-title">Let's Talk Operations</h1>
+            <p class="page-subtitle">Tell us about your challenges. We'll tell you how we can help.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>For detailed inquiries or project proposals</p>
+                    <a href="mailto:hello@expo.operations" class="method-link">hello@expo.operations</a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Based in Missoula, Montana</p>
+                    <p class="method-detail">Serving the Northwest and beyond</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">⏱️</div>
+                    <h3>Response Time</h3>
+                    <p>We aim to respond within 24 hours</p>
+                    <p class="method-detail">Business days: Mon-Fri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>Start a Conversation</h2>
+                    <p class="lead-text">Whether you need a full operations overhaul or help with a specific challenge, we're here to help. Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="what-happens-next">
+                        <h3>What happens next?</h3>
+                        <ol class="next-steps">
+                            <li>We'll review your submission and reach out within 24 hours</li>
+                            <li>Schedule a free 30-minute consultation to discuss your needs</li>
+                            <li>If it's a good fit, we'll create a custom proposal</li>
+                            <li>Agree on scope and timeline, then get to work</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-section">
+                            <h3 class="form-section-title">About You</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="role">Your Role *</label>
+                                <select id="role" name="role" required>
+                                    <option value="">Select your role...</option>
+                                    <option value="owner">Owner/Founder</option>
+                                    <option value="gm">General Manager</option>
+                                    <option value="ops">Director of Operations</option>
+                                    <option value="partner">Operating Partner</option>
+                                    <option value="chef">Executive Chef</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3 class="form-section-title">About Your Operation</h3>
+                            
+                            <div class="form-group">
+                                <label for="businessName">Business/Brand Name *</label>
+                                <input type="text" id="businessName" name="businessName" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="locations">Number of Locations *</label>
+                                    <select id="locations" name="locations" required>
+                                        <option value="">Select...</option>
+                                        <option value="1">1 location</option>
+                                        <option value="2-3">2-3 locations</option>
+                                        <option value="4-10">4-10 locations</option>
+                                        <option value="11+">11+ locations</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="concept">Concept Type *</label>
+                                    <select id="concept" name="concept" required>
+                                        <option value="">Select...</option>
+                                        <option value="full-service">Full-Service Restaurant</option>
+                                        <option value="fast-casual">Fast Casual</option>
+                                        <option value="qsr">QSR</option>
+                                        <option value="bar">Bar/Brewery/Distillery</option>
+                                        <option value="cafe">Cafe/Coffee Shop</option>
+                                        <option value="hotel">Hotel F&B</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location">Primary Location (City, State) *</label>
+                                <input type="text" id="location" name="location" placeholder="e.g., Missoula, MT" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3 class="form-section-title">What You Need</h3>
+                            
+                            <div class="form-group">
+                                <label>Which areas interest you? (Select all that apply) *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="systems">
+                                        <span>Systems — SOPs, workflows, documentation</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="culture">
+                                        <span>Culture — Training, onboarding, service standards</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="security">
+                                        <span>Security — POS audits, network hardening, staff training</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="optimization">
+                                        <span>Optimization — Workflow analysis, tech stack, labor management</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="not-sure">
+                                        <span>Not sure — I just know something needs to change</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="urgency">Timeline/Urgency *</label>
+                                <select id="urgency" name="urgency" required>
+                                    <option value="">Select...</option>
+                                    <option value="asap">ASAP — We need help now</option>
+                                    <option value="month">Within the next month</option>
+                                    <option value="quarter">Within the next 3 months</option>
+                                    <option value="exploring">Just exploring options</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Tell us about your challenges *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="What's not working? What keeps you up at night? What would success look like?" required></textarea>
+                                <small class="form-help">The more specific you can be, the better we can help.</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="hearAbout">How did you hear about EXPO?</label>
+                                <select id="hearAbout" name="hearAbout">
+                                    <option value="">Select...</option>
+                                    <option value="referral">Referral from another operator</option>
+                                    <option value="search">Google/Web search</option>
+                                    <option value="social">Social media</option>
+                                    <option value="event">Industry event</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            <p class="form-privacy">We respect your privacy. Your information will never be shared.</p>
+                        </div>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Received!</h3>
+                        <p>Thanks for reaching out. We'll review your submission and get back to you within 24 hours.</p>
+                        <button class="btn btn-outline" onclick="resetForm()">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-header text-center">Looking for Something Else?</h2>
+            
+            <div class="quick-links-grid">
+                <a href="resources.html#templates" class="quick-link-card">
+                    <div class="quick-link-icon">📄</div>
+                    <h3>Free Templates</h3>
+                    <p>Download ready-to-use operational templates</p>
+                </a>
+                
+                <a href="services.html" class="quick-link-card">
+                    <div class="quick-link-icon">📋</div>
+                    <h3>View Services</h3>
+                    <p>Explore our four core pillars in detail</p>
+                </a>
+                
+                <a href="resources.html#faq" class="quick-link-card">
+                    <div class="quick-link-icon">❓</div>
+                    <h3>Read FAQs</h3>
+                    <p>Common questions about working with EXPO</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">EXPO</h3>
+                    <p class="footer-tagline">Strategic Ops Studio for Hospitality</p>
+                    <p class="footer-description">Based in Missoula, Montana. Serving restaurants and multi-site brands across the Northwest and beyond.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About EXPO</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#systems">Systems</a></li>
+                        <li><a href="services.html#culture">Culture</a></li>
+                        <li><a href="services.html#security">Security</a></li>
+                        <li><a href="services.html#optimization">Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Get Started</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="resources.html#faq">FAQ</a></li>
+                        <li><a href="resources.html#templates">Free Templates</a></li>
+                        <li><a href="contact.html#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 EXPO Operations Studio. All rights reserved.</p>
+                <p class="footer-slogan">The last checkpoint before service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
