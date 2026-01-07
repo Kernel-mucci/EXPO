@@ -1,0 +1,25 @@
+# EXPO Website - Jekyll Configuration
+# This file helps GitHub Pages handle URLs cleanly
+
+# Site settings
+title: EXPO
+description: Strategic Operations Studio for Hospitality
+url: "https://expo-consulting.co"
+baseurl: ""
+
+# Prevent Jekyll from processing certain files
+exclude:
+  - README.md
+  - QUICK-START.md
+  - GITHUB-DEPLOYMENT.md
+  - DEPLOYMENT-CHECKLIST.md
+  - NAMECHEAP-DNS-SETUP.md
+  - START-HERE.md
+  - CNAME.template
+  - .gitignore
+
+# Permalink structure (clean URLs)
+permalink: pretty
+
+# Disable Jekyll blog features (we're not using them)
+plugins: []
