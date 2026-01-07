@@ -264,12 +264,7 @@ section {
     padding: var(--spacing-xl) var(--container-padding);
     position: relative;
     overflow: hidden;
-    background: 
-        linear-gradient(135deg, transparent 0%, transparent 48%, var(--color-red) 48%, var(--color-red) 52%, transparent 52%, transparent 100%),
-        linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-black) 48%, var(--color-black) 52%, transparent 52%, transparent 100%),
-        var(--color-cream);
-    background-size: 60px 60px, 60px 60px, 100%;
-    background-position: 0 0, 30px 30px, 0 0;
+    background: linear-gradient(135deg, var(--color-cream) 0%, #e8e4da 100%);
 }
 
 .hero-content {
