@@ -909,10 +909,9 @@ section {
 }
 
 .cta-subtext {
-    font-family: var(--font-serif);
     font-size: 1.5rem;
-    font-style: italic;
-    color: var(--color-grey-light);
+    font-weight: 600;
+    color: var(--color-red);
     margin-bottom: var(--spacing-lg);
 }
 
