@@ -775,7 +775,7 @@ section {
 }
 
 .point-content p {
-    color: var(--color-grey-light);
+    color: var(--color-cream); /* Much more readable! */
     line-height: 1.6;
 }
 
