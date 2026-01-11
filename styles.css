@@ -775,8 +775,9 @@ section {
 }
 
 .point-content p {
-    color: var(--color-cream); /* Much more readable! */
+    color: #ffffff; /* Pure white */
     line-height: 1.6;
+    opacity: 0.95; /* Slight softness */
 }
 
 .visual-card {
