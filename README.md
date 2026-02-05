@@ -263,7 +263,7 @@ All rights reserved © 2026 EXPO Operations Studio
 ## Contact
 
 For questions about this website:
-- Email: hello@expo.operations
+- Email: hello@expo-consulting.co
 - Location: Missoula, Montana
 
 ---

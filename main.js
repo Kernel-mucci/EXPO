@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('%c EXPO ', 'background: #D64545; color: #F5F1E8; font-size: 24px; font-weight: bold; padding: 10px;');
     console.log('%c Strategic Ops Studio for Hospitality ', 'background: #1a1a1a; color: #F5F1E8; font-size: 14px; padding: 5px;');
-    console.log('%c\nInterested in how we built this? We\'d love to talk. hello@expo.operations', 'color: #6a6a6a; font-size: 12px;');
+    console.log('%c\nInterested in how we built this? We\'d love to talk. hello@expo-consulting.co', 'color: #6a6a6a; font-size: 12px;');
     
     // ===========================
     // Performance Optimization
