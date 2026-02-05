@@ -102,13 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get form data
             const formData = new FormData(contactForm);
             
-            // Validate that at least one service checkbox is checked
-            const serviceCheckboxes = contactForm.querySelectorAll('input[name="services"]:checked');
-            if (serviceCheckboxes.length === 0) {
-                alert('Please select at least one area of interest.');
-                return;
-            }
-            
             // Here you would normally send the data to a server
             // For now, we'll just simulate a successful submission
             console.log('Form data:', Object.fromEntries(formData));
