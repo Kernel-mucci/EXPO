@@ -2898,7 +2898,8 @@ section {
 
 @media (max-width: 1024px) {
     .story-grid,
-    .philosophy-content {
+    .philosophy-content,
+    .founder-layout {
         grid-template-columns: 1fr;
     }
     
@@ -3338,18 +3339,89 @@ body::before {
 }
 
 /* ===========================
-   Team Section
+   FOUNDER SECTION
    =========================== */
 
-.team-section {
+.founder {
     background: var(--color-cream);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) var(--container-padding);
 }
 
-.team-content {
-    max-width: 740px;
+.founder-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
 }
 
-.team-text p {
-    margin-bottom: 1.5rem;
+.founder-name {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-red);
+    margin-bottom: 0.25rem;
+}
+
+.founder-role {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-grey);
+    margin-bottom: var(--spacing-md);
+}
+
+.founder-bio p {
+    color: var(--color-charcoal);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.founder-bio strong {
+    color: var(--color-black);
+}
+
+.founder-credentials {
+    background: var(--color-white);
+    border: 3px solid var(--color-black);
+    padding: var(--spacing-md);
+}
+
+.credential-block {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-grey-lighter);
+}
+
+.credential-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.credential-block h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-red);
+    margin-bottom: 0.75rem;
+}
+
+.credential-block p {
+    color: var(--color-charcoal);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.credential-block p:last-child {
+    margin-bottom: 0;
+}
+
+.credential-note {
+    font-size: 0.8rem;
+    color: var(--color-grey);
+    font-style: italic;
 }
