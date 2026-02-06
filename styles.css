@@ -1499,6 +1499,7 @@ section {
 .quote-card {
     background: var(--color-charcoal);
     padding: var(--spacing-md);
+    padding-bottom: 5rem;
     border: 3px solid var(--color-red);
     margin-bottom: var(--spacing-md);
     position: relative;
