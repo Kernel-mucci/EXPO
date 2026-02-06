@@ -1515,6 +1515,19 @@ section {
     left: 1rem;
 }
 
+.quote-mark--close {
+    top: auto;
+    left: auto;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.icon--check {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    border-color: var(--color-cream);
+}
+
 .quote-text {
     font-family: var(--font-serif);
     font-size: 1.5rem;
