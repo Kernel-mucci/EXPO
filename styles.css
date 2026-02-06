@@ -1525,7 +1525,9 @@ section {
 
 .icon--check {
     color: var(--color-white);
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    width: 56px;
+    height: 56px;
     border-color: var(--color-cream);
 }
 
