@@ -1073,7 +1073,7 @@ section {
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     font-style: italic;
     color: var(--color-grey-light);
-    max-width: 600px;
+    max-width: 800px;
 }
 
 /* Text Utilities */
