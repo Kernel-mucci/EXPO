@@ -151,22 +151,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===========================
     
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -40px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                // Optionally unobserve after animation
-                // observer.unobserve(entry.target);
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
-    
-    // Observe elements for fade-in animation
-    document.querySelectorAll('.problem-card, .pillar, .serve-card, .value-card, .offering-card').forEach(el => {
+
+    // Set initial state and observe
+    document.querySelectorAll('.offering-card, .value-card, .serve-card, .cs-build-item, .proof-stat').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(16px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(el);
     });
     
@@ -351,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('%c EXPO ', 'background: #D64545; color: #F5F1E8; font-size: 24px; font-weight: bold; padding: 10px;');
     console.log('%c Strategic Ops Studio for Hospitality ', 'background: #1a1a1a; color: #F5F1E8; font-size: 14px; padding: 5px;');
-    console.log('%c\nInterested in how we built this? We\'d love to talk. hello@expo.operations', 'color: #6a6a6a; font-size: 12px;');
+    console.log('%c\nInterested in how we built this? We\'d love to talk. hello@expo-consulting.co', 'color: #6a6a6a; font-size: 12px;');
     
     // ===========================
     // Performance Optimization
