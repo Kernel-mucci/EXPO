@@ -2440,6 +2440,148 @@ section {
     line-height: 1.6;
 }
 
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Live guide card (published articles) */
+.guide-card-live {
+    opacity: 1;
+    border-color: var(--color-black);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.guide-card-live:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.guide-card-live h3 {
+    color: var(--color-black);
+}
+
+.guide-card-live p {
+    color: var(--color-charcoal);
+}
+
+.guide-tag-live {
+    background: var(--color-red);
+}
+
+/* Blog article page styles */
+.blog-article {
+    background: var(--color-cream);
+}
+
+.blog-article .container {
+    max-width: 800px;
+}
+
+.article-meta {
+    font-size: 0.875rem;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-grey-lighter);
+}
+
+.blog-article h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-red);
+}
+
+.blog-article h2::before {
+    content: '//';
+    color: var(--color-red);
+    margin-right: 0.5rem;
+    font-weight: 800;
+}
+
+.blog-article p {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-charcoal);
+    margin-bottom: 1.5rem;
+}
+
+.blog-article blockquote {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-black);
+    color: var(--color-cream);
+    border-left: 6px solid var(--color-red);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.blog-article .pattern-block {
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md);
+    background: var(--color-white);
+    border: 3px solid var(--color-black);
+}
+
+.blog-article .pattern-block h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-black);
+}
+
+.blog-article .pattern-reactive,
+.blog-article .pattern-preventive {
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-article .pattern-reactive {
+    border-left: 4px solid var(--color-grey-lighter);
+}
+
+.blog-article .pattern-preventive {
+    border-left: 4px solid var(--color-red);
+    background: rgba(214, 69, 69, 0.05);
+}
+
+.blog-article .pattern-reactive h4,
+.blog-article .pattern-preventive h4 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.blog-article .pattern-reactive h4 {
+    color: var(--color-grey);
+}
+
+.blog-article .pattern-preventive h4 {
+    color: var(--color-red);
+}
+
+.blog-article .article-closing {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 3px solid var(--color-black);
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--color-grey);
+}
+
+.blog-article .article-closing em {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 .faq-section {
     background: linear-gradient(to bottom, #e8e4da 0%, var(--color-cream) 100%);
     scroll-margin-top: 100px;
@@ -3440,4 +3582,171 @@ body::before {
     font-size: 0.8rem;
     color: var(--color-grey);
     font-style: italic;
+}
+
+/* ===========================
+   DESIGN PHILOSOPHY SECTION
+   =========================== */
+
+.design-philosophy {
+    background: linear-gradient(to bottom, var(--color-cream) 0%, #e8e4da 100%);
+}
+
+.design-philosophy-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0 0 var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-black);
+    color: var(--color-cream);
+    border: 4px solid var(--color-red);
+}
+
+.philosophy-explanation {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.philosophy-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.comparison-column {
+    padding: var(--spacing-md);
+    border: 3px solid var(--color-black);
+}
+
+.comparison-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-column > p {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-grey);
+    margin-bottom: var(--spacing-md);
+}
+
+.comparison-column ul {
+    list-style: none;
+}
+
+.comparison-column ul li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--color-grey-lighter);
+}
+
+.comparison-column ul li:last-child {
+    border-bottom: none;
+}
+
+.comparison-reactive {
+    background: var(--color-white);
+}
+
+.comparison-reactive h3 {
+    color: var(--color-grey);
+}
+
+.comparison-reactive ul li::before {
+    content: '\2717';
+    position: absolute;
+    left: 0;
+    color: var(--color-grey-light);
+    font-weight: bold;
+}
+
+.comparison-preventive {
+    background: var(--color-white);
+    border-color: var(--color-red);
+}
+
+.comparison-preventive h3 {
+    color: var(--color-red);
+}
+
+.comparison-preventive ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.philosophy-principle {
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border: 3px solid var(--color-black);
+    border-left: 6px solid var(--color-red);
+}
+
+.philosophy-principle h3 {
+    font-size: 1.75rem;
+    color: var(--color-red);
+    margin-bottom: var(--spacing-sm);
+}
+
+.philosophy-principle p {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-charcoal);
+}
+
+.philosophy-principle em {
+    color: var(--color-red);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .philosophy-comparison {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===========================
+   SERVICES POSITIONING
+   =========================== */
+
+.services-positioning {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.positioning-statement {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-black);
+    border: 3px solid var(--color-red);
+    text-align: center;
+}
+
+.positioning-headline {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: var(--color-grey-light);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.positioning-highlight {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 700;
+    color: var(--color-red-light);
+    margin-bottom: 0;
 }
