@@ -1662,14 +1662,21 @@ section {
 .pillar-nav-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    justify-content: flex-end;
+    gap: 0.25rem;
     padding: var(--spacing-md);
-    background: var(--color-white);
+    min-height: 160px;
     border: 3px solid var(--color-black);
     text-decoration: none;
     transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
 }
+
+.pillar-nav--systems  { background: var(--color-cream); }
+.pillar-nav--culture  { background: var(--color-red); color: var(--color-cream); }
+.pillar-nav--security { background: var(--color-black); color: var(--color-cream); }
+.pillar-nav--optimization { background: var(--color-cream); }
 
 .pillar-nav-item:hover {
     background: var(--color-black);
@@ -1677,8 +1684,17 @@ section {
     transform: translateY(-4px);
 }
 
-.nav-icon {
-    font-size: 2.5rem;
+.pillar-nav--security:hover {
+    background: var(--color-cream);
+    color: var(--color-black);
+}
+
+.nav-number {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    opacity: 0.25;
 }
 
 .nav-label {
