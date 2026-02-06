@@ -151,22 +151,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===========================
     
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -40px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                // Optionally unobserve after animation
-                // observer.unobserve(entry.target);
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
-    
-    // Observe elements for fade-in animation
-    document.querySelectorAll('.problem-card, .pillar, .serve-card, .value-card, .offering-card').forEach(el => {
+
+    // Set initial state and observe
+    document.querySelectorAll('.offering-card, .value-card, .serve-card, .cs-build-item, .proof-stat').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(16px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(el);
     });
     

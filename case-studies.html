@@ -39,33 +39,105 @@
         </div>
     </section>
 
-    <!-- Coming Soon Notice -->
-    <section class="coming-soon-notice">
+    <!-- Park Avenue Bakery Case Study -->
+    <section class="case-study-feature">
         <div class="container">
-            <div class="notice-box">
-                <h2>Case Studies In Progress</h2>
-                <p class="lead-text">EXPO is currently working with anchor clients to build and document our first case studies. We're implementing systems, culture, security, and optimization frameworks across restaurant groups in the Northwest — and documenting real before/after results.</p>
 
-                <div class="notice-content">
-                    <div class="expected-cases">
-                        <h3>Active Engagements:</h3>
-                        <ul>
-                            <li><strong>Multi-Unit System Overhaul</strong> — Documentation and workflow optimization for a local restaurant group</li>
-                            <li><strong>Security Hardening</strong> — POS audit and network segmentation for a high-volume venue</li>
-                            <li><strong>Onboarding Program Build</strong> — From tribal knowledge to structured training for a growing brand</li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- Case Study Header -->
+            <div class="cs-header">
+                <p class="proof-label">Case Study 001</p>
+                <h2 class="cs-title">Park Avenue Bakery</h2>
+                <p class="cs-location">Helena, Montana — Artisan bakery, single location</p>
+            </div>
 
-                <div class="notice-cta">
-                    <p>Want to be an early partner? We're offering discounted project rates, priority access to new offerings, and collaborative engagements where your feedback shapes our methodology.</p>
-                    <a href="contact.html?interest=pilot" class="btn btn-primary">Apply for Pilot Program</a>
+            <!-- The Challenge -->
+            <div class="cs-section">
+                <div class="cs-section__label">The Challenge</div>
+                <div class="cs-section__content">
+                    <p>Park Avenue Bakery is a beloved Helena institution baking specialty breads, cookies, and bars six days a week. Their operation ran on phone calls, walk-ins, and institutional knowledge — which worked until demand outgrew the system. No online ordering. No structured prep process. No way to manage capacity during peak periods. Staff relied on memory for daily checklists, and there was no visibility into whether opening and closing procedures were being completed consistently.</p>
                 </div>
             </div>
+
+            <!-- What We Built -->
+            <div class="cs-section">
+                <div class="cs-section__label">What We Built</div>
+                <div class="cs-section__content">
+                    <div class="cs-build-grid">
+                        <div class="cs-build-item">
+                            <h4>E-Commerce Ordering System</h4>
+                            <p>Full shopping cart with category filtering, localStorage persistence, real-time totals, and Clover Hosted Checkout payment integration via Vercel serverless functions.</p>
+                        </div>
+                        <div class="cs-build-item">
+                            <h4>Intelligent Order Guardrails</h4>
+                            <p>Day-specific menu availability tied to their actual baking schedule — 7 specialty breads rotating across the week. Automated cutoff times (5 PM day-before for specialty, 10 AM same-day for everyday items). Daily inventory caps per item type. Blackout dates for holidays. Per-order quantity limits with large-order phone redirects.</p>
+                        </div>
+                        <div class="cs-build-item">
+                            <h4>Staff Prep Dashboard</h4>
+                            <p>Password-protected dashboard showing today's bake list generated from incoming orders, pickup schedule organized by time slot, "Mark Ready" tracking, and printable pickup sheets for counter staff. Auto-refreshes throughout the day.</p>
+                        </div>
+                        <div class="cs-build-item">
+                            <h4>Operational Checklists</h4>
+                            <p>Five daily checklists covering every shift from 4 AM baker opening to 5:30 PM closing — 59 items total. Multiple input types including checkboxes, temperature readings with out-of-range alerts, photo proof uploads, and numeric entries. Progress tracking and save/resume for interrupted workflows. Touch-optimized for kitchen use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- By the Numbers -->
+            <div class="cs-numbers">
+                <div class="cs-number">
+                    <span class="cs-number__value">5</span>
+                    <span class="cs-number__label">Daily Checklists</span>
+                </div>
+                <div class="cs-number">
+                    <span class="cs-number__value">59</span>
+                    <span class="cs-number__label">Checklist Items</span>
+                </div>
+                <div class="cs-number">
+                    <span class="cs-number__value">7</span>
+                    <span class="cs-number__label">Specialty Bread Schedules</span>
+                </div>
+                <div class="cs-number">
+                    <span class="cs-number__value">6</span>
+                    <span class="cs-number__label">Integrated Systems</span>
+                </div>
+                <div class="cs-number">
+                    <span class="cs-number__value">0</span>
+                    <span class="cs-number__label">Sales Tax (Montana)</span>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="cs-section">
+                <div class="cs-section__label">Tech Stack</div>
+                <div class="cs-section__content">
+                    <p>HTML5, CSS3, Vanilla JavaScript (ES6+), Vercel Serverless Functions, Clover Hosted Checkout API, Formspree, localStorage/sessionStorage. No frameworks, no bloat — just fast, purpose-built tools that the team can understand and maintain.</p>
+                </div>
+            </div>
+
+            <!-- The Takeaway -->
+            <div class="cs-section">
+                <div class="cs-section__label">The Takeaway</div>
+                <div class="cs-section__content">
+                    <p class="pull-quote" style="border-bottom: none; margin: 0; padding: var(--spacing-md) 0;">The best operations systems aren't impressive — they're invisible. They let the team focus on baking, not firefighting.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-
+    <!-- More Studies Coming -->
+    <section class="more-studies">
+        <div class="container">
+            <div class="more-studies__box">
+                <h3>More Case Studies In Progress</h3>
+                <p>We're currently working with restaurant groups across the Northwest on multi-unit system overhauls, security hardening, and onboarding program builds. Detailed case studies will be published as engagements complete.</p>
+                <p style="margin-top: var(--spacing-md);">
+                    <a href="contact.html?interest=pilot" class="btn btn-primary">Become a Pilot Partner</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
