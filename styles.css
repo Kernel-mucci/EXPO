@@ -2582,6 +2582,28 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.blog-article .article-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    padding-left: 1.5rem;
+}
+
+.blog-article .article-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    color: var(--color-charcoal);
+}
+
+.blog-article .article-list li::before {
+    content: '\25B8';
+    position: absolute;
+    left: -1.5rem;
+    color: var(--color-red);
+    font-weight: bold;
+}
+
 .faq-section {
     background: linear-gradient(to bottom, #e8e4da 0%, var(--color-cream) 100%);
     scroll-margin-top: 100px;
