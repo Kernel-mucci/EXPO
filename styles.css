@@ -2506,7 +2506,7 @@ section {
 
 .blog-article p {
     font-family: var(--font-serif);
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     color: var(--color-charcoal);
     margin-bottom: 1.5rem;
@@ -2580,6 +2580,28 @@ section {
 .blog-article .article-closing em {
     display: block;
     margin-bottom: 0.5rem;
+}
+
+.blog-article .article-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    padding-left: 1.5rem;
+}
+
+.blog-article .article-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    color: var(--color-charcoal);
+}
+
+.blog-article .article-list li::before {
+    content: '\25B8';
+    position: absolute;
+    left: -1.5rem;
+    color: var(--color-red);
+    font-weight: bold;
 }
 
 .faq-section {
@@ -3749,4 +3771,200 @@ body::before {
     font-weight: 700;
     color: var(--color-red-light);
     margin-bottom: 0;
+}
+
+/* ===========================
+   WHAT WE DO SECTION
+   =========================== */
+
+.what-we-do {
+    background: var(--color-black);
+    color: var(--color-cream);
+    padding: var(--spacing-xl) 0;
+}
+
+.what-we-do__content {
+    max-width: 800px;
+}
+
+.what-we-do .section-header {
+    color: var(--color-cream);
+}
+
+.what-we-do__lead {
+    font-family: var(--font-serif);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-style: italic;
+    color: var(--color-red-light);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+}
+
+.what-we-do__points p {
+    color: var(--color-grey-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+
+/* ===========================
+   HOW IT WORKS — BEFORE/AFTER
+   =========================== */
+
+.how-it-works {
+    background: linear-gradient(to bottom, var(--color-cream) 0%, #e8e4da 100%);
+    padding: var(--spacing-xl) 0;
+}
+
+.how-it-works__subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-charcoal);
+    margin-bottom: var(--spacing-lg);
+}
+
+.transforms-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.transform-card {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: stretch;
+    background: var(--color-white);
+    border: 3px solid var(--color-black);
+    overflow: hidden;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.transform-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.transform-before,
+.transform-after {
+    padding: var(--spacing-md);
+}
+
+.transform-before {
+    background: var(--color-cream);
+}
+
+.transform-after {
+    background: var(--color-white);
+}
+
+.transform-label {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.transform-before .transform-label {
+    color: var(--color-grey);
+}
+
+.transform-after .transform-label {
+    color: var(--color-red);
+}
+
+.transform-before p {
+    color: var(--color-grey);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.transform-after p {
+    color: var(--color-charcoal);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.transform-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-red);
+    background: var(--color-black);
+    padding: 0 1rem;
+    min-width: 50px;
+    font-family: var(--font-display);
+}
+
+
+/* ===========================
+   WHO IT'S FOR SECTION
+   =========================== */
+
+.who-its-for {
+    background: var(--color-cream);
+    padding: var(--spacing-xl) 0;
+}
+
+.who-its-for__content {
+    max-width: 800px;
+}
+
+.who-its-for__text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-charcoal);
+    margin-bottom: 1.5rem;
+}
+
+.who-its-for__closer {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-black);
+}
+
+.who-its-for__closer a {
+    color: var(--color-red);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-red);
+    transition: color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.who-its-for__closer a:hover {
+    color: var(--color-red-dark);
+    border-color: var(--color-red-dark);
+}
+
+
+/* ===========================
+   RESPONSIVE — MIDDLE BEAT
+   =========================== */
+
+@media (max-width: 768px) {
+    .transform-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .transform-arrow {
+        padding: 0.5rem;
+        min-width: unset;
+    }
+
+    .transform-before,
+    .transform-after {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
 }
